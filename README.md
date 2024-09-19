@@ -4,23 +4,13 @@ Common assets used for package documentation.
 
 ## How to use
 
-To use these assets in a docfx website, first clone this repository as a submodule:
+1) Download these assets and place them in the following locations:
 
-```
-git submodule add https://github.com/bonsai-rx/docfx-assets assets
-```
+`favicon.ico`, `logo.svg`, `build.ps1` - in `docs/` folder
+`template/public/main.css and main.js` - in `docs/` folder (keep folder structure)
+`.github/workflows/docs.yml` - in root directory of repository (keep folder structure)
 
-Then modify `docfx.json` to include the asset files under the `"resource"` section:
-
-```json
-      {
-        "files": [
-          "logo.svg",
-          "favicon.ico"
-        ],
-        "src": "assets"
-      }
-```
+2) Edit `PackageName` in `docs.yml`, `build.ps1` and `main.js` to reflect the packagename of the repository being set up.
 
 ## Licensing
 
